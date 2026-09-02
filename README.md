@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vesta Sourcing & Procurement
 
-## Getting Started
+Premium marketing site for Vesta — a China-based sourcing and procurement partner for Nigerian businesses.
 
-First, run the development server:
+## Stack
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS v4
+
+## Configure before launch
+
+Copy `.env.example` to `.env.local` and set:
+
+| Variable | Purpose |
+| --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Canonical domain for sitemap, Open Graph and schema |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | International digits only, e.g. `2348012345678`. Do not invent a number. |
+| `NEXT_PUBLIC_EMAIL` | Public enquiry email, once available |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics measurement ID |
+| `ENQUIRY_WEBHOOK_URL` | Destination for procurement form submissions (CRM, Zapier, Make, or email worker) |
+
+Instagram is already linked to [@vesta_sourcing](https://www.instagram.com/vesta_sourcing/).
+
+Until `ENQUIRY_WEBHOOK_URL` is set, form submissions are validated and acknowledged, then logged without storing files. Qualified leads are scored internally as `hot`, `warm` or `cold` and included in the webhook payload.
+
+## Brand assets
+
+Official logo files live in `public/brand/`. Navigation uses a simplified V + VESTA wordmark (no tagline under the logo).
+
+Replace editorial photography in `public/images/` with Vesta's own China photography when available.
+
+## Case studies
+
+The proof section is a labelled placeholder. Do not publish client names, testimonials or results until they are approved.
+
+## Scripts
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
