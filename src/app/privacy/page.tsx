@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import { site } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Privacy Policy",
@@ -30,8 +31,11 @@ export default function PrivacyPage() {
           Please avoid sending unnecessary personal documents.
         </p>
         <p>
-          Contact details for privacy requests will be published here once an official
-          email address is configured via NEXT_PUBLIC_EMAIL.
+          For privacy requests, email{" "}
+          <a className="underline" href={`mailto:${site.email}`}>
+            {site.email}
+          </a>
+          .
         </p>
       </div>
     </div>

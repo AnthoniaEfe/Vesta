@@ -1,6 +1,7 @@
 import { ContactForm } from "@/components/ContactForm";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { pageMetadata } from "@/lib/seo";
+import { site } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Start Your Procurement",
@@ -29,8 +30,15 @@ export default function ContactPage() {
           <li>Do you already have a supplier?</li>
           <li>Do you have product specifications?</li>
         </ul>
-        <div className="mt-10">
+        <div className="mt-10 flex flex-col gap-3">
           <WhatsAppButton label="Ask About Your Product" />
+          <a
+            href={`mailto:${site.email}`}
+            className="text-sm text-[var(--text-secondary)] underline-offset-4 hover:text-[var(--color-navy)] hover:underline"
+            data-track="email-click"
+          >
+            {site.email}
+          </a>
         </div>
       </div>
       <ContactForm />

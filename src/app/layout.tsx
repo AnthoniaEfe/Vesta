@@ -49,8 +49,9 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
   },
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
-    apple: [{ url: "/apple-touch-icon.png" }],
+    icon: [{ url: "/brand/logo_no-bg_no-tagline.png", type: "image/png" }],
+    apple: [{ url: "/brand/logo_no-bg_no-tagline.png" }],
+    shortcut: "/brand/logo_no-bg_no-tagline.png",
   },
   alternates: { canonical: site.url },
 };

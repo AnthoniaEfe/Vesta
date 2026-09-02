@@ -15,8 +15,8 @@ Copy `.env.example` to `.env.local` and set:
 | Variable | Purpose |
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Canonical domain for sitemap, Open Graph and schema |
-| `NEXT_PUBLIC_WHATSAPP_NUMBER` | International digits only, e.g. `2348012345678`. Do not invent a number. |
-| `NEXT_PUBLIC_EMAIL` | Public enquiry email, once available |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | International digits  |
+| `NEXT_PUBLIC_EMAIL` | Public enquiry email (defaults to vestasourcing@outlook.com) |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Google Analytics measurement ID |
 | `ENQUIRY_WEBHOOK_URL` | Destination for procurement form submissions (CRM, Zapier, Make, or email worker) |
 
@@ -26,9 +26,7 @@ Until `ENQUIRY_WEBHOOK_URL` is set, form submissions are validated and acknowled
 
 ## Brand assets
 
-Official logo files live in `public/brand/`. Navigation uses a simplified V + VESTA wordmark (no tagline under the logo).
-
-Replace editorial photography in `public/images/` with Vesta's own China photography when available.
+Official logo files live in `public/brand/`. 
 
 ## Case studies
 

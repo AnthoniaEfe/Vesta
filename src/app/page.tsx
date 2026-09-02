@@ -5,6 +5,7 @@ import { GlassCard } from "@/components/GlassCard";
 import { InsightCard } from "@/components/InsightCard";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { insights } from "@/lib/insights";
 import { pageMetadata } from "@/lib/seo";
@@ -12,9 +13,9 @@ import { homeJourney } from "@/lib/process";
 import { services } from "@/lib/services";
 
 export const metadata = pageMetadata({
-  title: "China Sourcing for Nigerian Businesses",
+  title: "China Sourcing for Businesses Worldwide",
   description:
-    "Vesta helps Nigerian businesses find reliable Chinese suppliers and procure quality products. China-based sourcing and procurement — not a shipping company.",
+    "Vesta helps businesses find reliable Chinese suppliers and procure quality products. China-based sourcing and procurement.",
   path: "/",
 });
 
@@ -58,7 +59,7 @@ function Hero() {
             China sourcing, made simpler.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/82">
-            We help Nigerian businesses find reliable suppliers, procure quality
+            We help businesses find reliable suppliers, procure quality
             products and navigate the Chinese market with confidence.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -71,9 +72,6 @@ function Hero() {
           </div>
         </div>
         <GlassCard className="mt-10 max-w-md justify-self-end bg-white/82 lg:mt-0">
-          <p className="text-xs tracking-[0.24em] text-[var(--color-purple)] uppercase">
-            Seen us on Instagram?
-          </p>
           <p className="mt-3 font-serif text-3xl leading-tight">
             You don&apos;t have to navigate this alone.
           </p>
@@ -312,32 +310,10 @@ function Proof() {
       <div className="container-page">
         <SectionHeader
           heading="Real procurement. Real businesses."
-          copy="Case studies will be published here once clients approve the details. We do not invent results."
+          copy="Feedback from clients who sourced with Vesta."
         />
-        <div className="mt-10 rounded-[var(--radius-card)] border border-dashed border-[var(--border-strong)] bg-[var(--background-secondary)] p-8 md:p-12">
-          {/* Placeholder structure for approved case studies — do not invent clients */}
-          <p className="text-xs tracking-[0.24em] text-[var(--color-purple)] uppercase">
-            Placeholder — replace with approved case studies
-          </p>
-          <div className="mt-6 grid gap-8 md:grid-cols-4">
-            {["Client requirement", "The challenge", "What Vesta did", "Result"].map(
-              (label) => (
-                <div key={label}>
-                  <h3 className="text-sm font-medium tracking-wide uppercase">
-                    {label}
-                  </h3>
-                  <p className="mt-2 text-sm text-[var(--text-muted)]">
-                    Approved client story to be added.
-                  </p>
-                </div>
-              ),
-            )}
-          </div>
-          <p className="mt-8 max-w-2xl text-[var(--text-secondary)]">
-            If you have worked with Vesta and would like your procurement documented,
-            tell us. Until then, the process and the China presence are the proof we
-            can stand behind publicly.
-          </p>
+        <div className="mt-10">
+          <TestimonialCarousel />
         </div>
       </div>
     </section>

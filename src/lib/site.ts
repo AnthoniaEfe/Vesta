@@ -9,7 +9,7 @@ export const site = {
   instagramHandle: "vesta_sourcing",
   instagramUrl: "https://www.instagram.com/vesta_sourcing/",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "",
-  email: process.env.NEXT_PUBLIC_EMAIL || "",
+  email: (process.env.NEXT_PUBLIC_EMAIL || "vestasourcing@outlook.com").trim(),
   gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "",
   whatsappDefaultMessage:
     "Hello Vesta, I'd like help sourcing a product from China.",

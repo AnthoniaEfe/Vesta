@@ -8,6 +8,7 @@ export function JsonLd() {
     url: site.url,
     description: site.description,
     areaServed: ["NG", "Africa"],
+    email: site.email,
     sameAs: [site.instagramUrl],
     knowsAbout: [
       "China sourcing",

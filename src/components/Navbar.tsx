@@ -19,7 +19,7 @@ export function Navbar() {
       >
         Skip to content
       </a>
-      <div className="container-page flex h-[4.4rem] items-center justify-between gap-4">
+      <div className="container-page flex h-[5.25rem] items-center justify-between gap-4">
         <Logo compact />
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
           {navLinks.map((link) => {

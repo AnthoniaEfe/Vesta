@@ -19,10 +19,10 @@ export function Footer() {
         <div className="max-w-xs">
           <Logo variant="dark" />
           <p className="mt-5 text-sm leading-relaxed text-white/70">
-            VESTA Sourcing & Procurement
+            Vesta Sourcing & Procurement
           </p>
           <p className="mt-3 text-sm leading-relaxed text-white/70">
-            Helping Nigerian businesses source smarter from China.
+            Helping businesses source smarter from China.
           </p>
         </div>
         <div>
