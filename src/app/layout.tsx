@@ -25,7 +25,7 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "China Sourcing for Nigerian Businesses | Vesta Sourcing & Procurement",
+    default: "China Sourcing for Businesses | Vesta Sourcing & Procurement",
     template: "%s | Vesta Sourcing & Procurement",
   },
   description: site.description,

@@ -34,7 +34,7 @@ export default function OpenGraphImage() {
             China sourcing, made simpler.
           </div>
           <div style={{ fontSize: 28, color: "rgba(255,255,255,0.72)", maxWidth: 760 }}>
-            A China-based sourcing and procurement partner for Nigerian businesses.
+            A China-based sourcing and procurement partner for businesses.
           </div>
         </div>
       </div>
